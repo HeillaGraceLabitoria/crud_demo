@@ -24,14 +24,16 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.ButtonConnect = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBoxName = New System.Windows.Forms.TextBox()
-        Me.TextBoxAge = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtAge = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBoxEmail = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.BtnInsert = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.BtnRead = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,49 +50,49 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(293, 165)
+        Me.Label1.Location = New System.Drawing.Point(296, 167)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Name:"
         '
-        'TextBoxName
+        'txtName
         '
-        Me.TextBoxName.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.TextBoxName.Location = New System.Drawing.Point(334, 162)
-        Me.TextBoxName.Name = "TextBoxName"
-        Me.TextBoxName.Size = New System.Drawing.Size(274, 20)
-        Me.TextBoxName.TabIndex = 2
+        Me.txtName.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.txtName.Location = New System.Drawing.Point(337, 164)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(274, 20)
+        Me.txtName.TabIndex = 2
         '
-        'TextBoxAge
+        'txtAge
         '
-        Me.TextBoxAge.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.TextBoxAge.Location = New System.Drawing.Point(334, 188)
-        Me.TextBoxAge.Name = "TextBoxAge"
-        Me.TextBoxAge.Size = New System.Drawing.Size(274, 20)
-        Me.TextBoxAge.TabIndex = 4
+        Me.txtAge.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.txtAge.Location = New System.Drawing.Point(337, 190)
+        Me.txtAge.Name = "txtAge"
+        Me.txtAge.Size = New System.Drawing.Size(274, 20)
+        Me.txtAge.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(293, 191)
+        Me.Label2.Location = New System.Drawing.Point(296, 193)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(29, 13)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Age:"
         '
-        'TextBoxEmail
+        'txtEmail
         '
-        Me.TextBoxEmail.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.TextBoxEmail.Location = New System.Drawing.Point(334, 214)
-        Me.TextBoxEmail.Name = "TextBoxEmail"
-        Me.TextBoxEmail.Size = New System.Drawing.Size(274, 20)
-        Me.TextBoxEmail.TabIndex = 6
+        Me.txtEmail.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.txtEmail.Location = New System.Drawing.Point(337, 216)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(274, 20)
+        Me.txtEmail.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(293, 217)
+        Me.Label3.Location = New System.Drawing.Point(296, 219)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 5
@@ -99,7 +101,7 @@ Partial Class Form1
         'BtnInsert
         '
         Me.BtnInsert.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.BtnInsert.Location = New System.Drawing.Point(334, 240)
+        Me.BtnInsert.Location = New System.Drawing.Point(135, 245)
         Me.BtnInsert.Name = "BtnInsert"
         Me.BtnInsert.Size = New System.Drawing.Size(274, 37)
         Me.BtnInsert.TabIndex = 7
@@ -118,12 +120,32 @@ Partial Class Form1
         'BtnRead
         '
         Me.BtnRead.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.BtnRead.Location = New System.Drawing.Point(334, 283)
+        Me.BtnRead.Location = New System.Drawing.Point(135, 289)
         Me.BtnRead.Name = "BtnRead"
         Me.BtnRead.Size = New System.Drawing.Size(274, 37)
         Me.BtnRead.TabIndex = 9
         Me.BtnRead.Text = "READ (Retrieve Data)"
         Me.BtnRead.UseVisualStyleBackColor = False
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.btnUpdate.Location = New System.Drawing.Point(454, 246)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(274, 37)
+        Me.btnUpdate.TabIndex = 10
+        Me.btnUpdate.Text = "UPDATE (Edit Data)"
+        Me.btnUpdate.UseVisualStyleBackColor = False
+        '
+        'btnDelete
+        '
+        Me.btnDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.btnDelete.Location = New System.Drawing.Point(454, 289)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(274, 37)
+        Me.btnDelete.TabIndex = 11
+        Me.btnDelete.Text = "DELETE (Remove Data)"
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -131,14 +153,16 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Info
         Me.ClientSize = New System.Drawing.Size(825, 337)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.BtnRead)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BtnInsert)
-        Me.Controls.Add(Me.TextBoxEmail)
+        Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBoxAge)
+        Me.Controls.Add(Me.txtAge)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBoxName)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonConnect)
         Me.Name = "Form1"
@@ -151,12 +175,14 @@ Partial Class Form1
 
     Friend WithEvents ButtonConnect As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBoxName As TextBox
-    Friend WithEvents TextBoxAge As TextBox
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents txtAge As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBoxEmail As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents BtnInsert As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents BtnRead As Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents btnDelete As Button
 End Class
