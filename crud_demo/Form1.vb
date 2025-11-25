@@ -105,6 +105,7 @@ Public Class Form1
 
         Dim query As String = "DELETE FROM students_tbl WHERE name = @nameToDelete"
 
+
         Try
             Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=crud_demo_db;")
                 conn.Open()

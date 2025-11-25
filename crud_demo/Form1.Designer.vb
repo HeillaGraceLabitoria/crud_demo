@@ -42,7 +42,7 @@ Partial Class Form1
         Me.ButtonConnect.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.ButtonConnect.Location = New System.Drawing.Point(12, 22)
         Me.ButtonConnect.Name = "ButtonConnect"
-        Me.ButtonConnect.Size = New System.Drawing.Size(131, 130)
+        Me.ButtonConnect.Size = New System.Drawing.Size(96, 211)
         Me.ButtonConnect.TabIndex = 0
         Me.ButtonConnect.Text = "Connect MySQL"
         Me.ButtonConnect.UseVisualStyleBackColor = False
@@ -50,7 +50,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(279, 170)
+        Me.Label1.Location = New System.Drawing.Point(130, 177)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
         Me.Label1.TabIndex = 1
@@ -59,7 +59,7 @@ Partial Class Form1
         'txtName
         '
         Me.txtName.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.txtName.Location = New System.Drawing.Point(320, 167)
+        Me.txtName.Location = New System.Drawing.Point(174, 172)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(274, 20)
         Me.txtName.TabIndex = 2
@@ -67,7 +67,7 @@ Partial Class Form1
         'txtAge
         '
         Me.txtAge.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.txtAge.Location = New System.Drawing.Point(320, 193)
+        Me.txtAge.Location = New System.Drawing.Point(174, 198)
         Me.txtAge.Name = "txtAge"
         Me.txtAge.Size = New System.Drawing.Size(274, 20)
         Me.txtAge.TabIndex = 4
@@ -75,7 +75,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(279, 196)
+        Me.Label2.Location = New System.Drawing.Point(130, 201)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(29, 13)
         Me.Label2.TabIndex = 3
@@ -84,7 +84,7 @@ Partial Class Form1
         'txtEmail
         '
         Me.txtEmail.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.txtEmail.Location = New System.Drawing.Point(320, 219)
+        Me.txtEmail.Location = New System.Drawing.Point(174, 224)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(274, 20)
         Me.txtEmail.TabIndex = 6
@@ -92,7 +92,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(279, 222)
+        Me.Label3.Location = New System.Drawing.Point(130, 227)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 5
@@ -101,9 +101,9 @@ Partial Class Form1
         'BtnInsert
         '
         Me.BtnInsert.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.BtnInsert.Location = New System.Drawing.Point(135, 245)
+        Me.BtnInsert.Location = New System.Drawing.Point(454, 160)
         Me.BtnInsert.Name = "BtnInsert"
-        Me.BtnInsert.Size = New System.Drawing.Size(274, 37)
+        Me.BtnInsert.Size = New System.Drawing.Size(195, 25)
         Me.BtnInsert.TabIndex = 7
         Me.BtnInsert.Text = "CREATE (Insert Data)"
         Me.BtnInsert.UseVisualStyleBackColor = False
@@ -112,7 +112,7 @@ Partial Class Form1
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.InactiveBorder
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(167, 20)
+        Me.DataGridView1.Location = New System.Drawing.Point(114, 22)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(550, 134)
         Me.DataGridView1.TabIndex = 8
@@ -120,9 +120,9 @@ Partial Class Form1
         'BtnRead
         '
         Me.BtnRead.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.BtnRead.Location = New System.Drawing.Point(135, 289)
+        Me.BtnRead.Location = New System.Drawing.Point(454, 186)
         Me.BtnRead.Name = "BtnRead"
-        Me.BtnRead.Size = New System.Drawing.Size(274, 37)
+        Me.BtnRead.Size = New System.Drawing.Size(195, 25)
         Me.BtnRead.TabIndex = 9
         Me.BtnRead.Text = "READ (Retrieve Data)"
         Me.BtnRead.UseVisualStyleBackColor = False
@@ -130,9 +130,9 @@ Partial Class Form1
         'btnUpdate
         '
         Me.btnUpdate.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.btnUpdate.Location = New System.Drawing.Point(454, 246)
+        Me.btnUpdate.Location = New System.Drawing.Point(454, 210)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(274, 37)
+        Me.btnUpdate.Size = New System.Drawing.Size(195, 27)
         Me.btnUpdate.TabIndex = 10
         Me.btnUpdate.Text = "UPDATE (Edit Data)"
         Me.btnUpdate.UseVisualStyleBackColor = False
@@ -140,9 +140,9 @@ Partial Class Form1
         'btnDelete
         '
         Me.btnDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.btnDelete.Location = New System.Drawing.Point(454, 289)
+        Me.btnDelete.Location = New System.Drawing.Point(454, 238)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(274, 37)
+        Me.btnDelete.Size = New System.Drawing.Size(195, 24)
         Me.btnDelete.TabIndex = 11
         Me.btnDelete.Text = "DELETE (Remove Data)"
         Me.btnDelete.UseVisualStyleBackColor = False
@@ -152,7 +152,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Info
-        Me.ClientSize = New System.Drawing.Size(731, 337)
+        Me.ClientSize = New System.Drawing.Size(679, 271)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.BtnRead)
