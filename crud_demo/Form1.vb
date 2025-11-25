@@ -37,13 +37,14 @@ Public Class Form1
     End Sub
 
     Private Sub BtnRead_Click(sender As Object, e As EventArgs) Handles BtnRead.Click
-        Dim query As String = "SELECT name, age, email FROM crud_demo_db.students_tbl;" 'lahat ng column *
+        Dim query As String = "SELECT * FROM crud_demo_db.students_tbl;" 'lahat ng column *
         Try
             Using conn As New MySqlConnection("server=localhost; userid=root; password=root; database=crud_demo_db;")
                 Dim adapter As New MySqlDataAdapter(query, conn) 'may gustong kunin
                 Dim table As New DataTable() 'table object
                 adapter.Fill(table) 'from adapter to table
                 DataGridView1.DataSource = table 'Display to DataGridView
+                DataGridView1.Columns("id").Visible = False
             End Using
         Catch ex As Exception
             MsgBox(ex.Message)
